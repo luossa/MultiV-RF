@@ -1,0 +1,34 @@
+export len=192
+
+CUDA_VISIBLE_DEVICES=0 python -u run.py \
+             --task_name classification \
+             --is_training 1 \
+             --data STOCK \
+             --features 'Adj Close' \
+             --model_id STOCK_192_30 \
+             --target 'Risk_Label' \
+             --model S2IPLLM \
+             --train_epochs 10 \
+             --patience 10 \
+             --seq_len $len \
+             --window_size $len \
+             --window_stride 1 \
+             --label_len 0 \
+             --pred_len 1 \
+             --des 'Exp' \
+             --itr 1 \
+             --d_model 768 \
+             --learning_rate 0.0001 \
+             --patch_size 16 \
+             --stride 8 \
+             --add_prompt 1 \
+             --prompt_length 4 \
+             --batch_size 128 \
+             --sim_coef -0.1 \
+             --pool_size 24 \
+             --period 24 \
+             --percent 100 \
+             --trend_length 24 \
+             --seasonal_length 4
+
+

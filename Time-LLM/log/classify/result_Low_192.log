@@ -1,0 +1,10 @@
+2025-11-05 18:45:47,653 - my_custom_logger - INFO - Epoch: 1 | Train Loss: 1.3946916 Vali loss: 1.2278263 Vali acc: 0.4462369 Vali f1: 0.3905309 Test loss: 1.2549947 Test acc: 0.4860543 Test f1: 0.4187223
+2025-11-05 19:02:12,040 - my_custom_logger - INFO - Epoch: 2 | Train Loss: 1.4671312 Vali loss: 1.3268768 Vali acc: 0.4320621 Vali f1: 0.2766270 Test loss: 1.3042677 Test acc: 0.4657564 Test f1: 0.3054158
+2025-11-05 19:18:31,222 - my_custom_logger - INFO - Epoch: 3 | Train Loss: 1.4310968 Vali loss: 1.3285233 Vali acc: 0.4181953 Vali f1: 0.2888971 Test loss: 1.2945919 Test acc: 0.4620692 Test f1: 0.3163488
+2025-11-05 19:34:47,258 - my_custom_logger - INFO - Epoch: 4 | Train Loss: 1.4268029 Vali loss: 1.3161855 Vali acc: 0.4219656 Vali f1: 0.2779470 Test loss: 1.2625748 Test acc: 0.4674723 Test f1: 0.3174944
+2025-11-05 19:51:08,489 - my_custom_logger - INFO - Epoch: 5 | Train Loss: 1.4212199 Vali loss: 1.3313706 Vali acc: 0.4158933 Vali f1: 0.2820665 Test loss: 1.3032337 Test acc: 0.4632831 Test f1: 0.3099208
+2025-11-05 20:07:30,559 - my_custom_logger - INFO - Epoch: 6 | Train Loss: 1.4138958 Vali loss: 1.3622552 Vali acc: 0.3102342 Vali f1: 0.2477917 Test loss: 1.3768836 Test acc: 0.2745601 Test f1: 0.2377371
+2025-11-05 20:23:55,725 - my_custom_logger - INFO - Epoch: 7 | Train Loss: 1.4067503 Vali loss: 1.3394695 Vali acc: 0.4256453 Vali f1: 0.2802014 Test loss: 1.3165851 Test acc: 0.4657108 Test f1: 0.3092680
+2025-11-05 20:40:17,974 - my_custom_logger - INFO - Epoch: 8 | Train Loss: 1.4003698 Vali loss: 1.3301029 Vali acc: 0.4251559 Vali f1: 0.2807049 Test loss: 1.3035964 Test acc: 0.4662036 Test f1: 0.3080758
+2025-11-05 20:56:38,096 - my_custom_logger - INFO - Epoch: 9 | Train Loss: 1.3934624 Vali loss: 1.3388157 Vali acc: 0.4228357 Vali f1: 0.2802168 Test loss: 1.3129240 Test acc: 0.4681750 Test f1: 0.3109098
+2025-11-05 21:12:59,344 - my_custom_logger - INFO - Epoch: 10 | Train Loss: 1.3899619 Vali loss: 1.3374253 Vali acc: 0.4151501 Vali f1: 0.2815035 Test loss: 1.3175360 Test acc: 0.4640223 Test f1: 0.3110009

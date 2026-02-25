@@ -1,0 +1,1 @@
+Measurements of stock risk in 200 stock in SP500, using open, adj close, close, volume, low, high to predict the stock risk.

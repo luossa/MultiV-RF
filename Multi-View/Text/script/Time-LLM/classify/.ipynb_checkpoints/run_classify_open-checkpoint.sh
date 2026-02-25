@@ -1,0 +1,33 @@
+export CUDA_VISIBLE_DEVICES=3
+python run_main.py \
+  --task_name classification \
+  --is_training 1 \
+  --model_id STOCK_96_30 \
+  --model TimeLLM \
+  --llm_model GPT2 \
+  --data STOCK \
+  --features 'Open' \
+  --target Risk_Label \
+  --seq_len 96 \
+  --label_len 48 \
+  --pred_len 1 \
+  --factor 3 \
+  --enc_in 1 \
+  --dec_in 1 \
+  --c_out 1 \
+  --des Exp \
+  --itr 1 \
+  --d_model 32 \
+  --d_ff 768 \
+  --batch_size 128 \
+  --learning_rate 0.001 \
+  --llm_layers 6 \
+  --train_epochs 20 \
+  --window_stride 1 \
+  --window_size 96 \
+  --n_classes 5 \
+  --llm_dim 768 \
+  --patience 20 \
+  --model_comment stock_Open \
+  --log_path /gemini/code/SP500/Time-LLM/log/classify/result_Open.log \
+  --checkpoints /gemini/code/SP500/Time-LLM/checkpoint/classify

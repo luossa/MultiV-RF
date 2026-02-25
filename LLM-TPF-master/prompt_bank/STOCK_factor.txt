@@ -1,0 +1,1 @@
+The datasets captures daily  fundational data over ten years, and the datasets includes 200 stock.

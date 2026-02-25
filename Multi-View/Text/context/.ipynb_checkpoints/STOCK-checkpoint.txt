@@ -1,0 +1,1 @@
+STOCK is a collection of daily data from S&P 500, which describes the risk of different stock risk

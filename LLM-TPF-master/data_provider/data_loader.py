@@ -70,9 +70,11 @@ class Dataset_stock(Dataset):
             # 合并所有训练数据
             all_train_data_feature = np.concatenate(all_train_data_feature, axis=0).reshape(-1, 1)
             self.scaler.fit(all_train_data_feature)  # 在全局训练数据上拟合特征的scaler
-            if self.task_name == 'long_term_forecast':
-                all_train_data_target = np.concatenate(all_train_data_target, axis=0).reshape(-1, 1)
-                self.scaler1.fit(all_train_data_target)  # 在全局训练数据上拟合目标的scaler
+
+            #测试回归不进行归一化的结果
+            # if self.task_name == 'long_term_forecast':
+            #     all_train_data_target = np.concatenate(all_train_data_target, axis=0).reshape(-1, 1)
+            #     self.scaler1.fit(all_train_data_target)  # 在全局训练数据上拟合目标的scaler
 
 
 
@@ -94,7 +96,9 @@ class Dataset_stock(Dataset):
                 if self.scale:
                     # 应用全局归一化
                     df_data.loc[:, self.feature] = self.scaler.transform(df_data[self.feature].values.reshape(-1, 1)).ravel()
-                    df_data.loc[:, self.target] = self.scaler1.transform(df_data[self.target].values.reshape(-1, 1)).ravel()
+
+                    #target不进行归一化
+                    # df_data.loc[:, self.target] = self.scaler1.transform(df_data[self.target].values.reshape(-1, 1)).ravel()
                     data = df_data
                 else:
                     data = df_data
